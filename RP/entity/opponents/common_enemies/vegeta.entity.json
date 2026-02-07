@@ -57,6 +57,9 @@
                     "root",
                     {
                         "tail_curled": "!v.is_oozaru"
+                    },
+                    {
+                        "tail_move": "v.is_oozaru"
                     }
                 ]
             },
@@ -90,7 +93,8 @@
                 "sprint": "animation.player.sprint",
                 "walk": "animation.player.walk",
                 "walk_controller": "controller.animation.common_enemy.walk",
-                "tail_curled": "animation.player.tail.curled"
+                "tail_curled": "animation.player.tail.curled",
+                "tail_move": "animation.player.tail.move"
             },
             "render_controllers": [
                 "controller.render.vegeta.armor",

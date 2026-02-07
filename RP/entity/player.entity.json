@@ -203,6 +203,11 @@
 				"goku_ssj3_hair": "geometry.goku_ssj3_hair",
 				"goku_ssj4_hair": "geometry.goku_ssj4_hair",
 				"goku_ssj5_hair": "geometry.goku_ssj5_hair",
+				// futtrunks hairs
+				"futtrunks_hair": "geometry.futtrunks_hair",
+				"futtrunks_ssj_hair": "geometry.futtrunks_ssj_hair",
+				"futtrunks_ssj2_hair": "geometry.futtrunks_ssj2_hair",
+				"futtrunks_ssjg_hair": "geometry.futtrunks_ssjg_hair",
 				// trunks hairs
 				"trunks_hair": "geometry.trunks_hair",
 				"trunks_ssj_hair": "geometry.trunks_ssj_hair",
@@ -227,6 +232,11 @@
 				"caulifla_ssj2_hair": "geometry.caulifla_ssj2_hair",
 				"caulifla_ssj3_hair": "geometry.caulifla_ssj3_hair",
 				"caulifla_ssj4_hair": "geometry.caulifla_ssj4_hair",
+				// chi chi hairs
+				"chichi_hair": "geometry.chichi_hair",
+				"chichi_ssj2_hair": "geometry.chichi_ssj2_hair",
+				"chichi_ssj3_hair": "geometry.chichi_ssj3_hair",
+				"chichi_ssj4_hair": "geometry.chichi_ssj4_hair",
 				// gine hairs
 				"gine_hair": "geometry.gine_hair",
 				"gine_ssj_hair": "geometry.gine_ssj_hair",

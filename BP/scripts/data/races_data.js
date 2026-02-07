@@ -87,7 +87,7 @@ const races_data = [
       gender: true,
       hair: {
         color_variant_count: 5,
-        variant_count: 5
+        variant_count: 6
       },
       skin: {
         variant_count: 6

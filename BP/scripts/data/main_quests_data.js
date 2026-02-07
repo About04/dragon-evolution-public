@@ -699,6 +699,7 @@ const main_quests_data = [
             }
           },
           available_transformations: [
+            "base",
             "buffed"
           ]
         }
@@ -718,6 +719,7 @@ const main_quests_data = [
             }
           },
           available_transformations: [
+            "base",
             "buffed"
           ]
         }
@@ -1074,7 +1076,10 @@ const main_quests_data = [
       },
       {
         type: "learn_skill",
-        skill: "divine_ki"
+        skill: "divine_ki",
+        requirements: {
+          race: ["human", "saiyan"]
+        }
       },
       {
         type: "unlock_transformation",

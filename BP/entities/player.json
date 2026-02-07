@@ -386,6 +386,15 @@
             "dbe:scale_198": { "minecraft:scale": { "value": 1.98 } },
             "dbe:scale_199": { "minecraft:scale": { "value": 1.99 } },
             "dbe:scale_200": { "minecraft:scale": { "value": 2.0 } },
+            "dbe:setup": {
+                "minecraft:health": {
+                    "value": 999999,
+                    "max": 999999
+                },
+                "minecraft:attack": {
+                    "damage": 1
+                }
+            },
             "dbe:unfused": {
                 "minecraft:type_family": {
                     "family": [
@@ -532,13 +541,6 @@
                     }
                 ]
             },
-            "minecraft:health": {
-                "value": 999999,
-                "max": 999999
-            },
-            "minecraft:attack": {
-                "damage": 1
-            },
             "minecraft:exhaustion_values": {
                 "heal": 6,
                 "jump": 0.05,
@@ -663,11 +665,12 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
+                        "dbe:setup",
                         "dbe:unfused"
                     ]
                 }
             },
-
+            "dbe:setup": { "add": { "component_groups": [ "dbe:setup" ] } },
             "dbe:scale_0": { "add": { "component_groups": [ "dbe:scale_0" ] } },
             "dbe:scale_1": { "add": { "component_groups": [ "dbe:scale_1" ] } },
             "dbe:scale_2": { "add": { "component_groups": [ "dbe:scale_2" ] } },

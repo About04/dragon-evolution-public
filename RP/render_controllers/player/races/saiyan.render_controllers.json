@@ -147,6 +147,42 @@
         "controller.render.player.saiyan.hair": {
             "arrays": {
                 "geometries": {
+                    "Array.broly_z_hairs": [
+                        "Geometry.broly_z_hair",
+                        "Geometry.broly_z_hair",
+                        "Geometry.broly_z_ssj_hair",
+                        "Geometry.broly_z_ssj_hair",
+                        "Geometry.broly_z_ssj2_hair",
+                        "Geometry.broly_z_ssj3_hair",
+                        "Geometry.broly_z_ssj2_hair",
+                        "Geometry.broly_z_hair",
+                        "Geometry.broly_z_ssj4_hair",
+                        "Geometry.broly_z_hair",
+                        "Geometry.broly_z_ssj_hair",
+                        "Geometry.broly_z_ssj_hair",
+                        "Geometry.broly_z_ssj2_hair",
+                        "Geometry.broly_z_ssj2_hair",
+                        "Geometry.gohan_beast_hair",
+                        "Geometry.broly_z_ssj2_hair"
+                    ],
+                    "Array.futtrunks_hairs": [
+                        "Geometry.futtrunks_hair",
+                        "Geometry.futtrunks_hair",
+                        "Geometry.futtrunks_ssj_hair",
+                        "Geometry.futtrunks_ssj_hair",
+                        "Geometry.futtrunks_ssj2_hair",
+                        "Geometry.trunks_ssj3_hair",
+                        "Geometry.futtrunks_ssj2_hair",
+                        "Geometry.futtrunks_hair",
+                        "Geometry.trunks_ssj4_hair",
+                        "Geometry.futtrunks_ssjg_hair",
+                        "Geometry.futtrunks_ssj_hair",
+                        "Geometry.futtrunks_ssj_hair",
+                        "Geometry.futtrunks_ssj2_hair",
+                        "Geometry.futtrunks_ssj2_hair",
+                        "Geometry.gohan_beast_hair",
+                        "Geometry.futtrunks_ssj2_hair"
+                    ],
                     "Array.goku_hairs": [
                         "Geometry.goku_hair",
                         "Geometry.goku_hair",
@@ -219,24 +255,6 @@
                         "Geometry.gohan_beast_hair",
                         "Geometry.vegeta_ssj2_hair"
                     ],
-                    "Array.broly_z_hairs": [
-                        "Geometry.broly_z_hair",
-                        "Geometry.broly_z_hair",
-                        "Geometry.broly_z_ssj_hair",
-                        "Geometry.broly_z_ssj_hair",
-                        "Geometry.broly_z_ssj2_hair",
-                        "Geometry.broly_z_ssj3_hair",
-                        "Geometry.broly_z_ssj2_hair",
-                        "Geometry.broly_z_hair",
-                        "Geometry.broly_z_ssj4_hair",
-                        "Geometry.broly_z_hair",
-                        "Geometry.broly_z_ssj_hair",
-                        "Geometry.broly_z_ssj_hair",
-                        "Geometry.broly_z_ssj2_hair",
-                        "Geometry.broly_z_ssj2_hair",
-                        "Geometry.gohan_beast_hair",
-                        "Geometry.broly_z_ssj2_hair"
-                    ],
                     "Array.caulifla_hairs": [
                         "Geometry.caulifla_hair",
                         "Geometry.caulifla_hair",
@@ -254,6 +272,24 @@
                         "Geometry.caulifla_ssj2_hair",
                         "Geometry.gohan_beast_hair",
                         "Geometry.caulifla_ssj2_hair"
+                    ],
+                    "Array.chichi_hairs": [
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_ssj2_hair",
+                        "Geometry.chichi_ssj3_hair",
+                        "Geometry.chichi_ssj2_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_ssj4_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_hair",
+                        "Geometry.chichi_ssj2_hair",
+                        "Geometry.chichi_ssj2_hair",
+                        "Geometry.gohan_beast_hair",
+                        "Geometry.chichi_ssj2_hair"
                     ],
                     "Array.gine_hairs": [
                         "Geometry.gine_hair",
@@ -320,7 +356,7 @@
                     ]
                 }
             },
-            "geometry": "v.is_ssj4 && v.ultra_instinct == 2 ? geometry.goku_ssj5_hair : v.is_female ? v.hair == 0 ? Array.caulifla_hairs[v.transformation] : v.hair == 1 ? Array.gine_hairs[v.transformation] : Array.videl_hairs[v.transformation] : v.hair == 0 ? Array.goku_hairs[v.transformation] : v.hair == 1 ? Array.gohan_hairs[v.transformation] : v.hair == 2 ? Array.trunks_hairs[v.transformation] : v.hair == 3 ? Array.vegeta_hairs[v.transformation] : Array.broly_z_hairs[v.transformation]",
+            "geometry": "v.is_ssj4 && v.ultra_instinct == 2 ? geometry.goku_ssj5_hair : v.is_female ? v.hair == 0 ? Array.caulifla_hairs[v.transformation] : v.hair == 1 ? Array.chichi_hairs[v.transformation] : v.hair == 2 ? Array.gine_hairs[v.transformation] : Array.videl_hairs[v.transformation] : v.hair == 0 ? Array.goku_hairs[v.transformation] : v.hair == 1 ? Array.gohan_hairs[v.transformation] : v.hair == 2 ? Array.trunks_hairs[v.transformation] : v.hair == 3 ? Array.vegeta_hairs[v.transformation] : v.hair == 4 ? Array.broly_z_hairs[v.transformation] : Array.futtrunks_hairs[v.transformation]",
             "materials": [ { "*": "Material.default" } ],
             "textures": [
                 "v.ultra_instinct == 2 ? Texture.saiyan_hair_ultra_instinct : v.is_ssj4 && v.fusion_type == 'metamoran' ? Texture.saiyan_hair_metamoran_ssj4 : v.is_lssj ? Texture.saiyan_hair_lssj : !v.is_default_hair_color ? Array.transformation_textures[v.transformation] : Array.textures[v.hair_color]"
