@@ -1,0 +1,36 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.vegeta": {
+            "arrays": {
+                "textures": {
+                    "Array.texture": [
+                        "Texture.skin_saiyan",
+                        "Texture.oozaru"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.texture[v.transformation]" ]
+        },
+        "controller.render.vegeta.armor": {
+            "geometry": "v.is_oozaru ? Geometry.oozaru_armor : Geometry.armor",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "v.is_oozaru ? Texture.oozaru_armor : Texture.armor" ]
+        },
+        "controller.render.vegeta.eyes": {
+            "arrays": {
+                "textures": {
+                    "Array.texture": [
+                        "Texture.eyes_saiyan",
+                        "Texture.saiyan_eyes_oozaru"
+                    ]
+                }
+            },
+            "geometry": "Geometry.eyes",
+            "materials": [ { "*": "material.emissive" } ],
+            "textures": [ "Array.texture[v.transformation]" ]
+        }
+    }
+}

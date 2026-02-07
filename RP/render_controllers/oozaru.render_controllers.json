@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.oozaru": {
+            "geometry": "Geometry.oozaru",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "v.transformation == 7 ? Texture.golden_oozaru : Texture.oozaru" ]
+        }
+    }
+}

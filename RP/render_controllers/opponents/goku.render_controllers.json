@@ -1,0 +1,67 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.goku.hair": {
+            "arrays": {
+                "geometries": {
+                    "Array.geometries": [
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.ssj_hair",
+                        "Geometry.ssj_hair",
+                        "Geometry.ssj2_hair",
+                        "Geometry.ssj3_hair",
+                        "Geometry.ssj2_hair",
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.ssj_hair",
+                        "Geometry.ssj_hair"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.hair",
+                        "Texture.hair",
+                        "Texture.hair_ssj",
+                        "Texture.hair_ssj",
+                        "Texture.hair_ssj",
+                        "Texture.hair_ssj3",
+                        "Texture.hair",
+                        "Texture.hair",
+                        "Texture.hair",
+                        "Texture.hair_ssjg",
+                        "Texture.hair_ssjb",
+                        "Texture.hair_ssjr"
+                    ]
+                }
+            },
+            "geometry": "Array.geometries[v.transformation]",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.textures[v.transformation]" ]
+        },
+        "controller.render.goku.eyes": {
+            "arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.eyes",
+                        "Texture.eyes",
+                        "Texture.eyes_ssj",
+                        "Texture.eyes_ssj",
+                        "Texture.eyes_ssj",
+                        "Texture.eyes_ssj3",
+                        "Texture.eyes",
+                        "Texture.eyes",
+                        "Texture.hair",
+                        "Texture.eyes_ssjg",
+                        "Texture.eyes_ssjb",
+                        "Texture.eyes_ssjr"
+                    ]
+                }
+            },
+            "geometry": "Geometry.eyes",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.textures[v.transformation]" ]
+        }
+    }
+}

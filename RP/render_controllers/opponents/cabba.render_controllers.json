@@ -1,0 +1,46 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cabba.hair": {
+            "arrays": {
+                "geometries": {
+                    "Array.geometries": [
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.hair",
+                        "Geometry.ssj2_hair"
+                    ]
+                },
+                "textures": {
+                    "Array.textures": [
+                        "Texture.hair",
+                        "Texture.hair",
+                        "Texture.hair_ssj",
+                        "Texture.hair_ssj",
+                        "Texture.hair_ssj"
+                    ]
+                }
+            },
+            "geometry": "Array.geometries[v.transformation]",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.textures[v.transformation]" ]
+        },
+        "controller.render.cabba.eyes": {
+            "arrays": {
+                "textures": {
+                    "Array.textures": [
+                        "Texture.eyes",
+                        "Texture.eyes",
+                        "Texture.eyes_ssj",
+                        "Texture.eyes_ssj",
+                        "Texture.eyes_ssj"
+                    ]
+                }
+            },
+            "geometry": "Geometry.eyes",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.textures[v.transformation]" ]
+        }
+    }
+}

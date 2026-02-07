@@ -1,0 +1,38 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "dbe:vegeta_battle_boots",
+            "materials": {
+                "default": "armor",
+                "dyed": "entity_alphatest_change_color",
+                "enchanted": "armor_enchanted"
+            },
+            "textures": {
+                "default": "textures/models/armor/vegeta_battle_armor",
+                "dyed": "textures/models/armor/vegeta_battle_armor_grayscale",
+                "enchanted": "textures/misc/enchanted_item_glint",
+                "oozaru_armor": "textures/models/armor/oozaru_vegeta_battle_armor"
+            },
+            "geometry": {
+                "default": "geometry.battle_armor.boots",
+                "oozaru_armor": "geometry.oozaru_clothes.boots"
+            },
+            "scripts": {
+                "parent_setup": "v.boot_layer_visible = 0;",
+                "pre_animation": [
+                    "v.is_dyed = q.armor_color_slot(3, 0) != 1 || q.armor_color_slot(3, 1) != 1 || q.armor_color_slot(3, 2) != 1 || q.armor_color_slot(3, 3) != 1;",
+                    "v.is_oozaru_armor = q.has_property('dbe:race') && q.has_property('dbe:transformation') ? q.property('dbe:race') == 'saiyan' && (q.property('dbe:transformation') == 1 || q.property('dbe:transformation') == 7) : 0.0;"
+                ]
+            },
+            "render_controllers": [
+                {
+                    "controller.render.dyed_armor": "!v.is_oozaru_armor"
+                },
+                {
+                    "controller.render.oozaru_armor": "v.is_oozaru_armor"
+                }
+            ]
+        }
+    }
+}
